@@ -1,20 +1,22 @@
-body{
-    font-family: Verdana ;
+body {
+    font-family: Verdana;
     font-size: 13px;
     color: #333;
     background: #f3f3f3;
-    padding: 20px; margin:0;
+    padding: 20px;
+    margin:0;
 }
-a{
-    color:#cb2c2c;
+a {
+    color: #cb2c2c;
     text-decoration: none;
 }
 h1 {
-    color:red;
+    color: red;
 }
 img {
-    width: 300px; height: 300px;
+    width: 300px;
+    height: 300px;
 }
-ul.list2{
-    color:red;
+ul.list2 {
+    color: red;
 }
