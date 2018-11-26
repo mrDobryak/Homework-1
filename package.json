@@ -1,0 +1,24 @@
+{
+  "name": "homework-1",
+  "version": "1.0.0",
+  "description": "Homework-1",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrDobryak/Homework-1.git"
+  },
+  "author": "mrDobryak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrDobryak/Homework-1/issues"
+  },
+  "homepage": "https://github.com/mrDobryak/Homework-1#readme",
+  "dependencies": {
+    "moment": "^2.22.2",
+    "nodemon": "^1.18.6"
+  }
+}
