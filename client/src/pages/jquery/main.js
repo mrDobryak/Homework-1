@@ -1,2 +1,8 @@
+import $ from 'jquery'
+// import moment from 'moment'
+
 console.clear()
-console.log("GG!")
+
+$("#button").click(function() {
+    console.log(1)
+})
