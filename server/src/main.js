@@ -1,4 +1,4 @@
-import moment from 'moment'
+import 'colors'
 
 console.log('\x1Bc')
-
+console.log('server reload'.magenta)
