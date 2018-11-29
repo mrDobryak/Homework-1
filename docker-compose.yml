@@ -1,0 +1,25 @@
+version: '3'
+services:
+  server:
+    container_name: 'homework-server'
+    build: './server'
+    volumes:
+      - ./server/src:/app/src
+    command: yarn run start
+    ports:
+      - 5050:5050
+    stdin_open: true
+    tty: true
+  client:
+    container_name: 'homework-client'
+    build: './client'
+    volumes:
+      - ./client/src:/app/src
+      - ./client/public:/app/public
+    command: yarn run start
+    ports:
+      - 8080:8080
+    environment:
+      - HOST=0.0.0.0
+    stdin_open: true
+    tty: true
