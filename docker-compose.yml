@@ -9,6 +9,10 @@ services:
     command: yarn run start
     ports:
       - 5050:5050
+    links:
+      - mongo
+    depends_on:
+      - mongo
     stdin_open: true
     tty: true
   client:
@@ -24,3 +28,15 @@ services:
       - HOST=0.0.0.0
     stdin_open: true
     tty: true
+  mongo:
+    container_name: homework-mongo
+    image: mongo:4.1
+    ports:
+      - 30001:27017
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./mongo/data:/data/db
+    command: mongod --logpath=/dev/null
+    restart: always
