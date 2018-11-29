@@ -1,11 +1,16 @@
-console.log('\x1Bc');
-// npm start
+var b = $("#action-button")
+var c = $(".counter")
+var counter = 0
 
-var moment = require("moment")
+function counterIncrement(a) {
+    if(a !== "first"){
+        counter += 1
+    } 
+    $(".counter").addClass("dobryak" + counter).removeClass("dobryak" + (counter-1))
+    c.text("counter is " + counter)
+}
 
-var fmt = "DD.MM.YYYY HH:mm:ss"
-var date = moment()
+b.click(counterIncrement)
 
-date.add(3, "month").endOf("month")
+counterIncrement("first")
 
-console.log(date.format(fmt))
