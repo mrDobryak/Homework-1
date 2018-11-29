@@ -1,8 +1,11 @@
 import $ from 'jquery'
 // import moment from 'moment'
 
-console.clear()
+export default function() {
+    
+    console.clear()
 
-$("#button").click(function() {
-    console.log(1)
-})
+    $("#button").click(function() {
+        console.log(1)
+    })
+}
