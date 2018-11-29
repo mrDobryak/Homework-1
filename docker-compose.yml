@@ -24,8 +24,10 @@ services:
     command: yarn run start
     ports:
       - 8080:8080
-    environment:
-      - HOST=0.0.0.0
+    links:
+      - server
+    depends_on:
+      - server
     stdin_open: true
     tty: true
   mongo:
