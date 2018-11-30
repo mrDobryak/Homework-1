@@ -1,11 +1,12 @@
 import $ from 'jquery'
-// import moment from 'moment'
+import moment from 'moment'
 
 export default function() {
     
     console.clear()
 
     $("#button").click(function() {
-        console.log(1)
+        var date = moment().format("DD.MM.YY HH:mm:ss")
+        $(".text").text(date)
     })
 }
