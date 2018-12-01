@@ -4,8 +4,8 @@ export default function() {
     
     console.clear()
 
-    $(".numbers").click(function() {
-        var html = $('.button').text();
-        console.log(html)
+    $(".numbers").find(".button").click(function() {
+        var text = $(this).text();
+        console.log(text)
     })
 }
