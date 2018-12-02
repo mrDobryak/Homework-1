@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Calc from './pages/calc/Calc.vue'
+import Bootstrap from './pages/bootstrap/Bootstrap.vue'
 
 Vue.use(Router)
 
@@ -13,6 +14,11 @@ export default new Router({
       name: 'Calc',
       component: Calc
     },
+    {
+      path: '/bootstrap',
+      name: 'Bootstrap',
+      component: Bootstrap
+    }
     // {
     //   path: '/about',
     //   name: 'about',
