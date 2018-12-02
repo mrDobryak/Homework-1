@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import JQuery from './pages/jquery/JQuery.vue'
+import Calc from './pages/calc/Calc.vue'
 
 Vue.use(Router)
 
@@ -9,9 +9,9 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'jquery',
-      component: JQuery
+      path: '/calc',
+      name: 'Calc',
+      component: Calc
     },
     // {
     //   path: '/about',
