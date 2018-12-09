@@ -5,7 +5,11 @@ export default function() {
     $('#app').html(html)
     $('#add').click(function() {
         var text = $('#text').val()
-        $('#list').append('<li>'+text+'</li>')
+        var button = $('<button>-</button>').click(function() {
+            $(this).parent().remove()
+        })
+        var li = $('<li>'+text+'</li>').append(button)
+        $('#list').append(li)
         $('#text').val('')
     })
     $('#clear').click(function() {
