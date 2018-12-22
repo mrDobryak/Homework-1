@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import Todo from './pages/Todo.vue'
+import App from './App.vue'
 
 new Vue({
     el: '#app',
     render: function(h) {
-        return h(Todo)
+        return h(App)
     }
 })
